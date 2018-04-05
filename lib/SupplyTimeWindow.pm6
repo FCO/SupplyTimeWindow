@@ -1,7 +1,7 @@
 use MONKEY-TYPING;
 augment class Supply {
 
-    multi method time-window($seconds) {
+    multi method time-window($seconds --> Supply) {
         self
             .map(-> $i {[{:time(now), :value($i)},]})
             .produce(-> @arr, @last {
@@ -11,7 +11,7 @@ augment class Supply {
         ;
     }
 
-    multi method time-window($seconds, :&transform!) {
+    multi method time-window($seconds, :&transform! --> Supply) {
         callwith($seconds)
             .map(&transform)
         ;
