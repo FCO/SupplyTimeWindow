@@ -1,21 +1,29 @@
 {
-    "name": "SupplyTimeWindow",
-    "perl": "v6.*",
-    "scripts": {
-        "test": "zef test ."
-    },
-    "license": "Artistic-2.0",
-    "production": false,
-    "version": "0.0.1",
-    "authors": [
-        "fernando"
-    ],
-    "description": "",
-    "test-depends": [
-        "Testo"
-    ],
-    "provides": {
-        "SupplyTimeWindow": "lib/SupplyTimeWindow.pm6"
-    },
-    "source-url": "git://github.com/FCO/SupplyTimeWindow.git"
+  "authors": [
+    "fernando"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "time-windowed arrays from a Supply",
+  "license": "Artistic-2.0",
+  "name": "SupplyTimeWindow",
+  "perl": "v6.*",
+  "production": false,
+  "provides": {
+    "SupplyTimeWindow": "lib/SupplyTimeWindow.rakumod"
+  },
+  "resources": [
+  ],
+  "scripts": {
+    "test": "zef test ."
+  },
+  "source-url": "https://github.com/FCO/SupplyTimeWindow.git",
+  "tags": [
+  ],
+  "test-depends": [
+    "Testo"
+  ],
+  "version": "0.0.1"
 }
